@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.hamza.rasa.shaab.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textShaab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SHAAB"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textShaab"
+            android:background="@drawable/recycle_bin" />
+
+        <Button
+            android:id="@+id/btnBluetoothList"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_below="@+id/textShaab"
+            android:background="@drawable/bluetooth_list" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layButtonHolder"
+        android:layout_below="@+id/layTop"
+        android:fillViewport="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/layInfo"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/layButtonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/bluetooth_connect" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/send" />
+
+    </RelativeLayout>
+</RelativeLayout>
